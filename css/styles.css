@@ -60,6 +60,12 @@ p {
 .link-info {
   color: var(--grey-text);
 }
+/* .link::before {
+  width: 10px;
+  height: 10px;
+  background-color: #2196f3;
+  content: "";
+} */
 .link-info:hover,
 .link-info:focus {
   color: var(--blue-text);
@@ -138,13 +144,20 @@ p {
 }
 .hero {
   max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Остальное/main.jpg);
   background-color: var(--black-fon);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   align-items: center;
 }
 
@@ -207,8 +220,7 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.item-nav {
-}
+
 .page-header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
@@ -225,7 +237,7 @@ p {
 
 .plain {
   margin-bottom: 10px;
-
+  margin-top: 30px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
@@ -260,6 +272,36 @@ p {
 }
 .main-list {
   width: 270px;
+}
+.item-letter,
+.item-nav {
+}
+.item-letter::before {
+}
+.item-nav:before {
+}
+.main-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--grey-fon);
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first-icon::before {
+  background-image: url(../images/Остальное/tarelka.png);
+}
+.second-icon::before {
+  background-image: url(../images/Остальное/Vector.png);
+}
+.third-icon::before {
+  background-image: url(../images/Остальное/nout.png);
+}
+.fouth-icon::before {
+  background-image: url(../images/Остальное/astronau.png);
 }
 .foundation-buttons {
   display: flex;
