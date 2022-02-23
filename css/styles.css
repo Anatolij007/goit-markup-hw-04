@@ -211,14 +211,22 @@ img {
 .main-list {
   width: 270px;
 }
-
-.main-list::before {
+.icon-svg-tru {
+  display: block;
+  padding: 0;
+  border: none;
+  width: 270px;
+  height: 120px;
+  color: red;
+  border-radius: 4px;
+  background-color: var(--grey-fon);
+}
+/* .main-list::before {
   display: block;
   content: "";
   height: 120px;
   border-radius: 4px;
   background-color: var(--grey-fon);
-  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,7 +242,7 @@ img {
 }
 .fouth-icon::before {
   background-image: url(../images/Остальное/astronau.png);
-}
+} */
 .plain {
   margin-bottom: 10px;
   margin-top: 30px;
