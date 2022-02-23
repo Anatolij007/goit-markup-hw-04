@@ -118,7 +118,9 @@ img {
 .link-info {
   color: var(--grey-text);
 }
-
+.nav-list .link.current {
+  color: var(--blue-text);
+}
 .link-info:hover,
 .link-info:focus {
   color: var(--blue-text);
@@ -323,6 +325,29 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+/* .icon-team {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: color var(--wght-fon);
+}
+.social-icon-team {
+  width: 20px;
+  height: 20px;
+  color: #afb1b8;
+  fill: currentColor;
+}
+.social-icon-team:hover,
+.social-icon-team:focus {
+  fill: var(--wght-fon);
+}
+
+.social > li:not(:last-child) {
+  margin-right: 10px;
+} */
 /* Подвал */
 .footer-fon {
   padding-top: 60px;
