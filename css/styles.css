@@ -27,7 +27,7 @@ body {
   color: var(--main-text);
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 h1,
@@ -94,8 +94,16 @@ img {
 .nav-list .nav-item + .nav-item {
   margin-left: 50px;
 }
-.auth-nav .nav-item + .nav-item {
+/*.auth-nav .nav-item + .nav-item {
   margin-left: 50px;
+}*/
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-header:hover,
+.icon-header:focus {
+  fill: var(--blue-text);
 }
 
 .nav-item,
@@ -137,8 +145,8 @@ img {
   display: flex;
   margin-left: auto;
 }
-.item-letter,
 .item-nav {
+  margin-left: 32px;
 }
 .item-letter::before {
 }
@@ -213,38 +221,21 @@ img {
 .main-list {
   width: 270px;
 }
+.icon-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  min-height: 120px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--grey-fon);
+}
 .icon-svg-tru {
-  display: block;
-  padding: 0;
-  border: none;
-  width: 270px;
-  height: 120px;
-  color: red;
-  border-radius: 4px;
-  background-color: var(--grey-fon);
+  width: 70px;
+  height: 70px;
 }
-/* .main-list::before {
-  display: block;
-  content: "";
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--grey-fon);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.first-icon::before {
-  background-image: url(../images/Остальное/tarelka.png);
-}
-.second-icon::before {
-  background-image: url(../images/Остальное/Vector.png);
-}
-.third-icon::before {
-  background-image: url(../images/Остальное/nout.png);
-}
-.fouth-icon::before {
-  background-image: url(../images/Остальное/astronau.png);
-} */
 .plain {
   margin-bottom: 10px;
   margin-top: 30px;
@@ -317,37 +308,46 @@ img {
 }
 .teams-text {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   color: var(--grey-text);
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-/* .icon-team {
+.icon-team {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: color var(--wght-fon);
+  width: 100%;
+  height: 100%;
 }
 .social-icon-team {
-  width: 20px;
-  height: 20px;
-  color: #afb1b8;
-  fill: currentColor;
 }
-.social-icon-team:hover,
-.social-icon-team:focus {
-  fill: var(--wght-fon);
+.icon-team:hover,
+.icon-team:focus {
+  fill: #2196f3;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-left: 0;
+  list-style: none;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .social > li:not(:last-child) {
   margin-right: 10px;
-} */
+}
+
 /* Подвал */
 .footer-fon {
   padding-top: 60px;
