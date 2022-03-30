@@ -99,10 +99,10 @@ img {
 }*/
 .icon-header {
   margin-right: 10px;
-  fill: currentColor;
 }
 .icon-header:hover,
 .icon-header:focus {
+  color: var(--blue-text);
   fill: var(--blue-text);
 }
 
@@ -132,6 +132,7 @@ img {
 .link-info:hover,
 .link-info:focus {
   color: var(--blue-text);
+  fill: var(--blue-text);
 }
 .link {
   font-family: var(--main-font);
@@ -328,7 +329,12 @@ img {
 }
 .icon-team:hover,
 .icon-team:focus {
-  fill: #2196f3;
+  background-color: var(--blue-text);
+  border-radius: 50%;
+}
+.social-icon-team:hover .icon-team,
+.social-icon-team:focus .icon-team {
+  fill: #ffffff;
 }
 .social {
   display: flex;
