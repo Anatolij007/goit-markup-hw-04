@@ -351,15 +351,61 @@ img {
 .social-link:focus .icon-team{
   fill: #ffffff;
 }
+
+/*Постоянные клиенты*/
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text)
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.clients-items:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-items {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill:#AFB1B8
+}
+.clients-items:hover ,
+.clients-items:focus {
+  border: 1px solid var(--blue-text)
+}
+
+.clients-items:hover .clients-links,
+.clients-items:focus .clients-links{
+  fill: var(--blue-text);
+
+}
 /* Подвал */
 .footer-fon {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: block;
   background-color: var(--black-fon);
 }
+
+.footer-fon .container {
+  display: flex;
+  align-items: baseline;
+}
 .main-web-footer {
-  display: block;
+  display: inline-block;
 
   margin-bottom: 20px;
 
@@ -418,6 +464,44 @@ img {
 .link-footer-two:focus {
   color: var(--blue-text);
 }
+.container .footer-list:not(:last-child) {
+  list-style: none;
+  margin-right: 70px;
+}
+.footer-txt {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wgt-text)
+}
+.subscribe {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px
+}
+.subscribe-item {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.subscribe-item:not(:last-child) {
+  margin-right: 10px;
+}
+.subscribe-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--wgt-text)
+}
+
+.subscribe-item:hover, 
+.subscribe-item:focus {
+  background-color: var(--blue-text);
+}
+
 /* Портфолио */
 /* Основа */
 .foundation-buttons {
@@ -433,6 +517,7 @@ img {
   padding: 6px 22px;
   border: 1px transparent;
   cursor: pointer;
+  background-color: #F5F4FA;
 
   font-family: var(--main-font);
   font-weight: 500;
@@ -487,4 +572,5 @@ img {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
